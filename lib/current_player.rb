@@ -3,9 +3,8 @@ board = ["", "", "", "", "", "", "", "", ""]
 def turn_count(board)
   board.each do |character|
     if character == "X" || "O"
-  x_turns = board.count("X")
-  o_turns = board.count("O")
-  turn_count = x_turns + o_turns
+    turn_count += 1
+  end
   return turn_count
 end
 
