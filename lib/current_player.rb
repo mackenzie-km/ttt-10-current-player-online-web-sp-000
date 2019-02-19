@@ -6,8 +6,6 @@ def turn_count(board)
     turn_count += 1
   elsif character == "O"
     turn_count += 1
-  else
-    turn_count
   end
   return turn_count
 end
