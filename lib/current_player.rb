@@ -1,15 +1,10 @@
 board = ["", "", "", "", "", "", "", "", ""]
 
 def turn_count(board)
-     turn_count = 0
-  board.each do |character|
-  if character == "X" 
-    turn_count += 1
-  elsif character == "O"
-    turn_count += 1
-  end
-end
-turn_count
+  x_turns = board.count("X")
+  o_turns = board.count("O")
+  turn_count = x_turns + o_turns
+  return turn_count
 end
 
 def current_player(board)
