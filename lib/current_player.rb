@@ -7,7 +7,7 @@ def turn_count(board)
   elsif character == "O"
     turn_count += 1
   end
-  return turn_count
+turn_count
 end
 
 def current_player(board)
